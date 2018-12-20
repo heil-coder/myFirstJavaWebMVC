@@ -92,3 +92,15 @@ CREATE TABLE `user` (
 INSERT INTO `user` VALUES ('admin', 'administrator', 'admin');
 ```
 
+# 项目编译
+
+## com.shawn.mvcdemo.vo.User编译
+
+```
+/项目目录$javac -encoding utf-8 -d ./WebContent/WEB-INF/classes src/com/shawn/mvcdemo/vo/User.java
+```
+### 编译说明
+
+> -encoding utf-8		设置编码格式为utf-8
+> -d ./WebContent/WEB-INF/classes		设置编译后的class文件保存路径
+> src/com/shawn/mvcdemo/vo/User.java	设置编译源文件

@@ -76,3 +76,19 @@
 |6|DAOFactory|JavaBean|工厂类，取得DAO接口的实例|
 |7|LoginServlet|Servlet|接收请求参数，进行参数验证，调用DAO完成具体的登录验证，并根据DAO的验证结果返回登录信息|
 |8|login.jsp|JSP|提供用户输入的表单、可以显示用户登录成功或失败的信息|
+
+# 数据库安装代码
+
+```
+DROP TABLE IF EXISTS `user`;
+
+CREATE TABLE `user` (
+  `userid` varchar(30) NOT NULL,
+  `name` varchar(30) NOT NULL,
+  `password` varchar(30) NOT NULL,
+  PRIMARY KEY  (`userid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO `user` VALUES ('admin', 'administrator', 'admin');
+```
+

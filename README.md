@@ -124,3 +124,10 @@ INSERT INTO `user` VALUES ('admin', 'administrator', 'admin');
 /项目目录$javac -encoding utf-8 -d ./WebContent/WEB-INF/classes -classpath ./WebContent/WEB-INF/classes src/com/shawn/mvcdemo/dao/proxy/*.java
 /项目目录$javac -encoding utf-8 -d ./WebContent/WEB-INF/classes -classpath ./WebContent/WEB-INF/classes src/com/shawn/mvcdemo/factory/*.java
 ```
+
+## 编译servlet文件
+
+```
+/项目目录$javac -encoding utf-8 -d ./WebContent/WEB-INF/classes -classpath ./WebContent/WEB-INF/classes;./WebContent/WEB-INF/lib/servlet-api.jar src/com/shawn/mvcdemo/servlet/LoginServle.java
+```
+

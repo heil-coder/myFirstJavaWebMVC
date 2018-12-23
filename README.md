@@ -104,3 +104,23 @@ INSERT INTO `user` VALUES ('admin', 'administrator', 'admin');
 > -encoding utf-8		设置编码格式为utf-8
 > -d ./WebContent/WEB-INF/classes		设置编译后的class文件保存路径
 > src/com/shawn/mvcdemo/vo/User.java	设置编译源文件
+
+## com.shawn.mvcdemo.dao.IUserDAO 编译
+
+```
+/项目目录$javac -encoding utf-8 -d ./WebContent/WEB-INF/classes -classpath ./WebContent/WEB-INF/classes src/com/shawn/mvcdemo/dao/IUserDAO.java
+```
+
+### 编译说明
+
+> -classpath ./WebContent/WEB-INF/classes 设置依赖class路径  
+
+## 剩余javaBean类编译
+
+```
+/项目目录$javac -encoding utf-8 -d ./WebContent/WEB-INF/classes -classpath ./WebContent/WEB-INF/classes src/com/shawn/mvcdemo/dbc/*.java
+/项目目录$javac -encoding utf-8 -d ./WebContent/WEB-INF/classes -classpath ./WebContent/WEB-INF/classes src/com/shawn/mvcdemo/dao/impl/*.java
+/项目目录$javac -encoding utf-8 -d ./WebContent/WEB-INF/classes -classpath ./WebContent/WEB-INF/classes src/com/shawn/mvcdemo/dao/proxy/*.java
+/项目目录$javac -encoding utf-8 -d ./WebContent/WEB-INF/classes -classpath ./WebContent/WEB-INF/classes src/com/shawn/mvcdemo/dao/proxy/*.java
+/项目目录$javac -encoding utf-8 -d ./WebContent/WEB-INF/classes -classpath ./WebContent/WEB-INF/classes src/com/shawn/mvcdemo/factory/*.java
+```

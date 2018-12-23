@@ -1,7 +1,7 @@
 <%@ page contentType="text/html" pageEncoding="utf-8" import="java.util.*"%>
 <html>
     <head>
-        <title>www.mldnjava.cn, MLDN高端Java培训</title>
+        <title>MyFirstJavaWebMVC</title>
         <%
             request.setCharacterEncoding("utf-8");
         %>

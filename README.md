@@ -91,6 +91,33 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` VALUES ('admin', 'administrator', 'admin');
 ```
+## 配置数据库账号信息
+
+```
+项目目录
+├─src                                           java源代码
+│  ├─com                                        package路径
+│  │  ├─shawn                                   应该使用原作者的名字命名的路径
+│  │  │  ├─mvcdemo                              mvc+demo命名
+│  │  │  │  ├─dbc                               Database connection（数据库连接）
+│  │  │  │  │  └─DatabaseConnection.java
+```
+
+> 在com.shawn.mvcdemo.dbc.DatabaseConnection中修改数据库账号信息
+```
+package com.shawn.mvcdemo.dbc;
+
+import java.sql.*;
+
+public class DatabaseConnection{
+    private static final String DBDRIVER = "org.gjt.mm.mysql.Driver";    //数据库驱动
+    private static final String DBURL = "jdbc:mysql://localhost:3306/mldn";    //数据库URL
+    private static final String DBUSER = "root";    //用户名
+    private static final String DBPASSWORD = "root";    //密码
+
+	……
+}
+```
 
 # 项目编译
 
